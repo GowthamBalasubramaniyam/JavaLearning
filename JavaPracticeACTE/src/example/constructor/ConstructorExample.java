@@ -3,24 +3,27 @@ package example.constructor;
 public class ConstructorExample {
 	int a = 10;
 	int b = 10;
+	int c;
+	int result;
 
-	//constructor without paramenters
+	// constructor without parameters
 	ConstructorExample() {
-		int c = a + b;
-		System.out.println(c);
+		c = a + b;
 	}
-	
-	//constructor with paramenters
+
+	// constructor overloading (two or more constructors )
+	// constructor with parameters
 	ConstructorExample(int ad, int bc) {
 		a = ad;
 		b = bc;
-		System.out.println(a * b);
+		result = a * b;
 	}
-	
-	ConstructorExample(int a , int b, String c){
-		this.a = a;
-		this.b = b;
-		
+
+	// copy constructors
+	ConstructorExample(ConstructorExample c) {
+		a = c.a;
+		b = c.b;
+
 	}
-	
+
 }
