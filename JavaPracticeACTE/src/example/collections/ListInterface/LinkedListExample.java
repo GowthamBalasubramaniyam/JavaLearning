@@ -24,6 +24,8 @@ public class LinkedListExample {
 		cities.removeFirst();
 		cities.removeLast();
 		
+		System.out.println(".getFirst() : "+cities.getFirst());
+		
 		System.out.println("Final cities "+cities);
 		
 		System.out.println("number of cities "+cities.size());
